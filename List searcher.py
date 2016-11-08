@@ -59,4 +59,4 @@ while b != "x":
         print()
         
 print("You selected: " + list1[counter].name)
-
+print("              " + list1[counter].description)
