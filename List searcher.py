@@ -10,16 +10,16 @@ def clear():
 counter = 0
 
 Health_potion = Items()
-Health_potion.name = "Health potion"
-Health_potion.description = "It heals you by 3 health points."
+Health_potion.name = "--Health potion--"
+Health_potion.description = "  It heals you by 3 health points."
 
 Better_health_potion = Items()
-Better_health_potion.name = "Better health potion"
-Better_health_potion.description = "It heals you by 5 health points."
+Better_health_potion.name = "--Better health potion--"
+Better_health_potion.description = "  It heals you by 5 health points."
 
 Defence_potion = Items()
-Defence_potion.name = "Health potion"
-Defence_potion.description = "It raises your defence by 3 points."
+Defence_potion.name = "--Defence potion--"
+Defence_potion.description = "  It raises your defence by 3 points."
 
 
 list1 = [Health_potion,Better_health_potion,Defence_potion]
@@ -53,4 +53,4 @@ while b != "x":
         print()
         
 print("You selected: " + list1[counter].name)
-
+print("              " + list1[counter].description)
