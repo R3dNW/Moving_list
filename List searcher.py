@@ -14,7 +14,7 @@ Health_potion.name = "Health potion"
 Health_potion.description = "It heals you by 3 health points."
 
 Better_health_potion = Items()
-Better_health_potion.name = "Better ealth potion"
+Better_health_potion.name = "Better health potion"
 Better_health_potion.description = "It heals you by 5 health points."
 
 Defence_potion = Items()
