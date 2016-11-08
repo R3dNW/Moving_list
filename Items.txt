@@ -1,0 +1,4 @@
+Health Potion, It heals you by 3 health points.
+Better Health Potion, It heals you by 5 health points.
+Defence Potion, It raises your defence by 3 points.
+MeMeMeMeMeMe, The Narcissism Potion

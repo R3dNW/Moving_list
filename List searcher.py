@@ -1,7 +1,8 @@
 #GitHub copy
-class Items:
+class Item:
     name = ""
     description = ""
+
 
 def clear():
     print("\n"*50)
@@ -9,20 +10,25 @@ def clear():
 
 counter = 0
 
-Health_potion = Items()
-Health_potion.name = "Health potion"
-Health_potion.description = "It heals you by 3 health points."
+###
+items = {}
 
-Better_health_potion = Items()
-Better_health_potion.name = "Better ealth potion"
-Better_health_potion.description = "It heals you by 5 health points."
+with open("Items.txt", "r") as f:
+    item_file_text = f.read()
 
-Defence_potion = Items()
-Defence_potion.name = "Health potion"
-Defence_potion.description = "It raises your defence by 3 points."
+item_file_lines = item_file_text.split("\n")
 
+for line in item_file_lines:
+    line = line.split(",")
+    if len(line) >= 2:
+        item = Item()
+        item.name = line[0]
+        item.description = line[1]
 
-list1 = [Health_potion,Better_health_potion,Defence_potion]
+        items[item.name] = item
+###
+
+list1 = list(items.values())
 b = 1
 
 print("Use 'w' and 's' to search and use 'x' to select.")
@@ -41,7 +47,7 @@ while b != "x":
     else:
         c = 0
 
-    for i in range(0,len(list1)):
+    for i in range(0, len(list1)):
         print(list1[i].name)
         
         if i == counter:
